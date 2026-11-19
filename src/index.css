@@ -1,1 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lilita+One&family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
+
+:root {
+  --color-primary: #3b2119;
+  --color-background: #fff3d9;
+  --color-secondary: #ffbd91;
+  --color-accent: #e98965;
+  --color-beige: #f7d9b2;
+
+  --font-heading: "Bowlby One SC", sans-serif;
+  --font-body: "Nunito Sans", sans-serif;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-background: var(--color-background);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-beige: var(--color-beige);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+h1 {
+  @apply font-heading;
+}
+
+p {
+  @apply font-body;
+}
