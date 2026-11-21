@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bymorphi.site/sitemap.xml
